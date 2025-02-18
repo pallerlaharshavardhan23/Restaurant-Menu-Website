@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(0, 0, 0, 0.7) url('images/food.jpg') center center fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container h1 {
+    color: #ff5722;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 18px;
+    text-transform: uppercase;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+    background-color: #ff5722;
+    color: #fff;
+}
+
+.navbar .reservation {
+    background-color: #ff5722;
+    border-radius: 5px;
+}
+
+.page {
+    display: none;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.page.active {
+    display: block;
+}
+
+.content {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.home-page {
+    text-align: center;
+    padding: 200px 20px;
+}
+
+.home-page h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.home-page h1 {
+    font-size: 48px;
+    color: #ff5722;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #e64a19;
+}
+
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.menu-buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    background-color: #ff5722;
+    color: white;
+    width: 200px;
+}
+
+.menu-buttons button:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-item {
+    margin: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    width: 250px;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.menu-item button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-item button:hover {
+    background-color: #e64a19;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-images img {
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.gallery-images img:hover {
+    transform: scale(1.05);
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member {
+    margin: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    width: 250px;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.contact-page form, .reservation-page form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-page input, .contact-page textarea, .reservation-page input {
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-page textarea {
+    height: 100px;
+}
+
+.contact-page button, .reservation-page button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-page button:hover, .reservation-page button:hover {
+    background-color: #e64a19;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.popup button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
